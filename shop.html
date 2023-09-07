@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230907161217">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
+							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<div class="actions-header__icons" data-da=".menu__list, 600">
+						<a href="#" class="actions-header__item _icon-instagram"></a>
+						<div class="actions-header__search search">
+							<button class="actions-header__item search__button _icon-search"></button>
+							<input autocomplete="off" type="text" name="search" placeholder="What you want to find?" class="search__input">
+						</div>
+						<a href="#" class="actions-header__item _icon-human"></a>
+					</div>
+					<div class="header__cart cart-header" data-da=".menu__list, 400">
+						<a href="#" class="cart-header__icon actions-header__item _icon-cart"></a>
+						<span class="cart-header__quantity">0</span>
+						<div class="cart-header__price">$ <span>0.00</span></div>
+						<div class="cart-header__body">
+							<ul class="cart-header__list cart-list"></ul>
+						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__shop shop">
+				<div class="shop__container">
+					<h1 class="shop__title page-title">
+						Shop
+					</h1>
+					<div class="shop__body">
+						<sidebar class="shop__control">
+							<div class="shop__filter filter">
+								<h2 class="filter__title title">Filter By Price</h2>
+								<div class="filter__range" id="range"></div>
+								<div class="filter__button button button_white">FILTER</div>
+								<div class="filter__price">Price $<span id="fromThis"></span> - $<span id="toThis">110</span></div>
+							</div>
+							<div class="shop__tags tags">
+								<h2 class="tags__title title">
+									Product tags
+								</h2>
+								<div class="tags__items">
+									<a href="#" class="tags__item">Bags</a>
+									<a href="#" class="tags__item">Sunglasses</a>
+									<a href="#" class="tags__item">Belts</a>
+								</div>
+							</div>
+						</sidebar>
+						<div data-tabs class="tabs products">
+							<div class="products__head">
+								<nav data-tabs-titles class='tabs__navigation'>
+									<button type="button" class="tabs__title _tab-active _icon-Grid"></button>
+									<button type="button" class="tabs__title _icon-List"></button>
+									<div class="products__results">
+										Showing 1–12 of 15 results
+									</div>
+								</nav>
+								<select name="sorting" data-class-modif="form" class="shop__select">
+									<option value="1" selected>Default sorting</option>
+									<option value="2">Implicit sorting</option>
+									<option value="3">Custom sorting</option>
+								</select>
+							</div>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body products">
+									<div class="list__items">
+										<div data-pid="1" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image" data-popup="#product_1">
+													<picture><source srcset="img/Shop/01.webp" type="image/webp"><img src="img/Shop/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_1">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_1">Bruden's Backpack</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>66.49</span>
+											</div>
+										</div>
+										<div data-pid="2" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image" data-popup="#product_2">
+													<picture><source srcset="img/Shop/02.webp" type="image/webp"><img src="img/Shop/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_2">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_2">Bruden's Backpack</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>66.49</span>
+											</div>
+										</div>
+										<div data-pid="3" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image">
+													<picture><source srcset="img/Shop/03.webp" type="image/webp"><img src="img/Shop/03.jpg" alt="Image" data-popup="#product_3" \></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_3">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_3">Bruden Belt</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>24.49</span>
+											</div>
+										</div>
+										<div data-pid="4" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image" data-popup="#product_4">
+													<picture><source srcset="img/Shop/04.webp" type="image/webp"><img src="img/Shop/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart" data-popup="#redBack">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_4">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_4">Sweet Pink Bruden Backpack</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>99.99</span>
+											</div>
+										</div>
+										<div data-pid="5" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image" data-popup="#product_5">
+													<picture><source srcset="img/Shop/05.webp" type="image/webp"><img src="img/Shop/05.jpg" alt="Image"></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart" data-popup="#redBack">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_5">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_5">MTL</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>49.99</span>
+											</div>
+										</div>
+										<div data-pid="6" class="list__item item-list item-product">
+											<div class="item-list__images">
+												<a href="#" class="item-list__image-ibg product-image" data-popup="#product_6">
+													<picture><source srcset="img/Shop/06.webp" type="image/webp"><img src="img/Shop/06.jpg" alt="Image"></picture>
+												</a>
+												<div class="item-list__icons">
+													<button type="button" class="item-list__icon item-list__icon_1 _icon-heart">
+														<span class="item-list__span">Add to favourite</span>
+
+													</button>
+													<a href="#" class="item-list__icon item-list__icon_2 _icon-eye" data-popup="#product_6">
+														<span class="item-list__span">Take a look</span>
+
+													</a>
+													<a href="#" class="item-list__icon item-list__cart _icon-cart">
+														<span class="item-list__span">Add to cart</span>
+													</a>
+												</div>
+											</div>
+											<a href="#" class="item-list__title product__title" data-popup="#product_6">LA</a>
+											<div class="item-list__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">5</div>
+											</div>
+											<div class="item-list__price">
+												C$ <span>35.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="grid__items">
+										<div class="grid__item item-grid">
+											<a href="#" class="item-grid__image" data-popup="#redBack">
+												<picture><source srcset="img/Shop/07.webp" type="image/webp"><img src="img/Shop/07.jpg" alt="Image"></picture>
+											</a>
+											<div class="item-grid__content">
+												<a href="#" class="item-grid__title" data-popup="#redBack">Fiery Red Bruden Backpack</a>
+												<div class="item-grid__rating rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+												<div class="item-grid__price">
+													C$ 99.99
+												</div>
+												<div class="item-grid__text">
+													Bruden's Backpack will give all your essentials a home while still feeling comfortable and having a fashionable look. Have your handsfree with this bag and don’t worry about getting your bag dirty if you need both hands to eat or if you don’t want it in the way of your shopping.
+												</div>
+												<div class="item-grid__icons">
+													<a href="#" class="item-grid__icon _icon-heart">
+													</a>
+													<a href="#" class="item-grid__icon _icon-eye" data-popup="#redBack">
+													</a>
+													<a href="#" class="item-grid__icon _icon-cart">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="grid__item item-grid">
+											<a href="#" class="item-grid__image">
+												<picture><source srcset="img/Shop/08.webp" type="image/webp"><img src="img/Shop/08.jpg" alt="Image" data-popup="#redBack"></picture>
+											</a>
+
+											<div class="item-grid__content">
+												<a href="#" class="item-grid__title" data-popup="#redBack">Bruden's Backpack</a>
+												<div class="item-grid__rating rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+												<div class="item-grid__price">
+													C$ 66.49
+												</div>
+												<div class="item-grid__text">
+													Bruden's Backpack will give all your essentials a home while still feeling comfortable and having a fashionable look. Have your handsfree with this bag and don’t worry about getting your bag dirty if you need both hands to eat or if you don’t want it in the way of your shopping.
+												</div>
+												<div class="item-grid__icons">
+													<a href="#" class="item-grid__icon _icon-heart">
+													</a>
+													<a href="#" class="item-grid__icon _icon-eye" data-popup="#redBack">
+													</a>
+													<a href="#" class="item-grid__icon _icon-cart">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="shop__paging paging">
+								<ul class="paging__list">
+									<li class="paging__item">
+										<a href="#" class="paging__link active ">1</a>
+									</li>
+									<li class="paging__item">
+										<a href="#" class="paging__link">2</a>
+									</li>
+								</ul>
+								<button type="button" class="paging__arrow">></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<h2 class="subscribe__title title">
+						Special products
+					</h2>
+					<div class="subscribe__label">Register now to get updates on promotions </div>
+					<form class="subscribe__form">
+						<input type="text" name="form[email]" data-error="Error" class="subscribe__input input">
+						<button type="submit" class="subscribe__button button">Subscribe</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main main-footer">
+					<a href="#" class="main-footer__logo logo"><img src="img/logo.svg" alt="Logo"></a>
+					<div class="main-footer__insta">
+						<a href="#" class="main-footer__link _icon-instagram"></a>
+						<a href="#" class="main-footer__user">@brudenmtl</a>
+					</div>
+					<div class="main-footer__copy">
+						©2023 by Bruden Mode. Proudly created with Me
+					</div>
+				</div>
+				<div data-spollers="767.98, max" data-one-spoller class="spollers footer__columns">
+					<details class="footer__column spollers__item">
+						<summary data-spoller class="footer__label spollers__title">Shop</summary>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Bags</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Belts</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Sunglasses</a>
+							</li>
+						</ul>
+					</details>
+					<details class="footer__column">
+						<summary data-spoller class="footer__label spollers__title">Account</summary>
+						<ul class="spollers__body footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Orders</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Checkout</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">My Account</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Account Details</a>
+							</li>
+						</ul>
+					</details>
+					<details class="footer__column">
+						<summary data-spoller class="footer__label spollers__title">Information</summary>
+						<ul class="spollers__body footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">FAQ’s</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Contact Us</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Privacy Policy</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Return policy</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Shipping Policy</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Terms and Conditions</a>
+							</li>
+						</ul>
+					</details>
+					<details class="footer__column">
+						<summary data-spoller class="footer__label spollers__title">Contacts</summary>
+						<ul class="spollers__body footer__list">
+							<li class="footer__item">
+								<a href="maito:email@mail.com" class="footer__link">email@mail.com</a>
+							</li>
+							<li class="footer__item">
+								<a href="tel:+1-000-000-0000" class="footer__link">+1-000-000-0000</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link footer__adress">Bld, Street, town, <br> ZIP Code </a>
+							</li>
+						</ul>
+					</details>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+	<div id="product_1" data-pid="1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/PopUp/01.webp" type="image/webp"><img src="img/PopUp/01.jpg" alt="Image" /></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">Fiery Red Bruden Backpack</h2>
+					<div class="popup__price">C$ 66.49</div>
+					<div class="popup__text">
+						Bruden's Backpack will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product_2" data-pid="2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/Shop/02.webp" type="image/webp"><img src="img/Shop/02.jpg" alt="Product image"></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">Fiery Black Bruden Backpack</h2>
+					<div class="popup__price">C$ 66.49</div>
+					<div class="popup__text">
+						Bruden's Backpack will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product_3" data-pid="3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/Shop/03.webp" type="image/webp"><img src="img/Shop/03.jpg" alt="Product image"></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">Bruden Belt</h2>
+					<div class="popup__price">C$ 24.49</div>
+					<div class="popup__text">
+						Bruden's Belt will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product_4" data-pid="4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/Shop/04.webp" type="image/webp"><img src="img/Shop/04.jpg" alt="Product image"></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">Sweet Pink Bruden Backpack</h2>
+					<div class="popup__price">C$ 99.99</div>
+					<div class="popup__text">
+						Bruden's Backpack will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product_5" data-pid="5" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/Shop/05.webp" type="image/webp"><img src="img/Shop/05.jpg" alt="Product image"></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">MTL</h2>
+					<div class="popup__price">C$ 49.99</div>
+					<div class="popup__text">
+						Bruden's Glasses will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="product_6" data-pid="6" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div href="#" class="popup__image-ibg">
+					<picture><source srcset="img/Shop/06.webp" type="image/webp"><img src="img/Shop/06.jpg" alt="Product image"></picture>
+				</div>
+				<div class="popup__body">
+					<h2 href="#" class="popup__title">LA</h2>
+					<div class="popup__price">C$ 35.00</div>
+					<div class="popup__text">
+						Bruden's Glasses will give all your essentials a home while
+						still feeling comfortable and having a fashionable look. Have
+						your handsfree with this bag and don’t worry about getting your
+						bag dirty if you need both hands to eat or if you don’t want it
+						in the way of your shopping.
+
+					</div>
+					<div class="popup__stock">97 in stock</div>
+					<div class="popup__quantity">
+						<span>Qty:</span>
+						<input type="number" name="quantity" onKeyDown="if(this.value.length==2 && event.keyCode!=8) return false;" data-error="Error" placeholder="0" class="popup__input" />
+						<div class="popup__button">Add to cart</div>
+					</div>
+					<ul class="popup__items">
+						<li class="popup__item"><span>SKU: </span>NHFL5-11</li>
+						<li class="popup__item"><span>Categories: </span>Bags</li>
+						<li class="popup__item">
+							<span>Tags: </span>Accessories, Leather
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery" aria-hidden="true" class="gallery__popup popup">
+		<div class="gallery__slider">
+			<button data-close type="button" class="gallery__close">X</button>
+			<div class="gallery__wrapper swiper-wrapper">
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/01.webp" type="image/webp"><img src="img/Gallery/01.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							<br />
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/02.webp" type="image/webp"><img src="img/Gallery/02.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/03.webp" type="image/webp"><img src="img/Gallery/03.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/04.webp" type="image/webp"><img src="img/Gallery/04.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/big.webp" type="image/webp"><img src="img/Gallery/big.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/06.webp" type="image/webp"><img src="img/Gallery/06.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/07.webp" type="image/webp"><img src="img/Gallery/07.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/08.webp" type="image/webp"><img src="img/Gallery/08.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide swiper-slide">
+					<div class="gallery__picture-ibg">
+						<picture><source srcset="img/Gallery/09.webp" type="image/webp"><img src="img/Gallery/09.png" alt="Image" /></picture>
+					</div>
+					<div class="gallery__body">
+						<div class="gallery__head">
+							<div class="gallery__head_left">
+								<a href="#" class="gallery__title">brudenmtl</a>
+								<div class="gallery__date">August 24</div>
+							</div>
+							<img src="img/icons/instagram.svg" alt="Icon" />
+						</div>
+						<div class="gallery__text">
+							🎒 taken. everywhere. 🥰 <br />
+							<div class="gallery__dots">
+								. <br />
+								.<br />
+								.<br />
+							</div>
+							#montreal #canada #mtl #quebec #toronto #mtlmoments #montr #al
+							#mtlblog #vancouver #montrealcity #love #laval #art
+							#photography #montrealmoments #ottawa #montreallife #ontario
+							#newyork #montrealfood #calgary #instagood #music #mtlfood
+							#fashion #montrealjetaime #photooftheday #montrealphoto #nhl
+							3w
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery__arrows">
+				<button type="button" class="slider-arrow slider-arrow_prev"></button>
+				<button type="button" class="slider-arrow slider-arrow_next"></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20230907161217"></script>
+</body>
+
+</html>
